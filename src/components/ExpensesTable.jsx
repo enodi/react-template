@@ -2,6 +2,11 @@ import { useState, useEffect } from "react"
 import Table from "./Table.jsx"
 import { columns } from "../utils.js"
 
+/**
+ * ExpensesTable component fetches expenses data from an API and renders it in a table.
+ * 
+ * @returns {JSX.Element} - Rendered ExpensesTable component.
+ */
 function ExpensesTable() {
   const [expenses, setExpenses] = useState([]);
   const [loading, setLoading] = useState(true);
