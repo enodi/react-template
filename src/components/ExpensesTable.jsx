@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import Table from "./Table.jsx"
+import { columns } from "../utils.js"
 
 function ExpensesTable() {
   const [expenses, setExpenses] = useState([]);
@@ -45,8 +46,8 @@ function ExpensesTable() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold">Expenses</h1>
-      <Table expenses={expenses} />
+      <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">Expenses</h1>
+      <Table data={expenses} columns={columns} />
     </div>
   );
 }
